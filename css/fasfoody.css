@@ -420,6 +420,9 @@ header .container li a:hover::before {
   .menu .box .branch {
     justify-content: center;
     text-align: center;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid;
   }
 }
 /* end-Menu */
@@ -606,6 +609,10 @@ footer a:hover {
 @media (max-width: 575px) {
   footer .boxs {
     font-size: 10px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   footer h3 {
     font-size: 12px;
