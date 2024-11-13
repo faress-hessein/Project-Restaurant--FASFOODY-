@@ -251,7 +251,7 @@ function onInit() {
     let newDiv = document.createElement("div");
     newDiv.classList.add("box");
     newDiv.innerHTML = `
-      <img src="image/manu/${item.img}" />
+      <img src="image/manu/${item.img}" loading="lazy"/>
   <div>
     <div class="infoeBox">
       <p>${item.name}</p>
