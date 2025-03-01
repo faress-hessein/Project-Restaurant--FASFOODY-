@@ -32,42 +32,42 @@ let message = document.querySelector(".message");
 // let  send form
 let form = document.querySelector("form");
 
-if (Send) {
-  Send.onclick = function () {
-    if (message.value !== "" && YourEmail.value !== "") {
-      form.addEventListener("click", (e) => {
-        if (e.target == Send) {
-          e.preventDefault();
-          SendEmail();
-          showPopup();
+// if (Send) {
+//   Send.onclick = function () {
+//     if (message.value !== "" && YourEmail.value !== "") {
+//       form.addEventListener("click", (e) => {
+//         if (e.target == Send) {
+//           e.preventDefault();
+//           SendEmail();
+//           showPopup();
 
-          // function Send Email
-          function SendEmail() {
-            let bodyMassege = `Name: ${YourName.value} <br> 
-    Email: ${YourEmail.value} <br>
-    Phone: ${YourPhone.value} <br>
-    Message: ${message.value} <br>
-    From Wep: "FASFOODY"`;
+//           // function Send Email
+//           function SendEmail() {
+//             let bodyMassege = `Name: ${YourName.value} <br>
+//     Email: ${YourEmail.value} <br>
+//     Phone: ${YourPhone.value} <br>
+//     Message: ${message.value} <br>
+//     From Wep: "FASFOODY"`;
 
-            Email.send({
-              Host: "smtp.elasticemail.com",
-              Username: "faresshessen61@gmail.com",
-              Password: "DB87645B09CFA82F10DB8793B350DBDD0679",
-              To: "faresshessen61@gmail.com",
-              From: "faresshessen61@gmail.com",
-              Subject: YourEmail.value,
-              Body: bodyMassege,
-            });
-            YourName.value = "";
-            YourEmail.value = "";
-            YourPhone.value = "";
-            message.value = "";
-          }
-        }
-      });
-    }
-  };
-}
+//             Email.send({
+//               Host: "smtp.elasticemail.com",
+//               Username: "faresshessen61@gmail.com",
+//               Password: "DB87645B09CFA82F10DB8793B350DBDD0679",
+//               To: "faresshessen61@gmail.com",
+//               From: "faresshessen61@gmail.com",
+//               Subject: YourEmail.value,
+//               Body: bodyMassege,
+//             });
+//             YourName.value = "";
+//             YourEmail.value = "";
+//             YourPhone.value = "";
+//             message.value = "";
+//           }
+//         }
+//       });
+//     }
+//   };
+// }
 
 // let btnEmail = document.getElementById("btnEmail");
 
@@ -251,7 +251,7 @@ function onInit() {
     let newDiv = document.createElement("div");
     newDiv.classList.add("box");
     newDiv.innerHTML = `
-      <img src="image/manu/${item.img}" loading="lazy"/>
+      <img src="../image/manu/${item.img}" loading="lazy"/>
   <div>
     <div class="infoeBox">
       <p>${item.name}</p>
@@ -294,7 +294,7 @@ function relodCart() {
     count += item.quantity;
     let newDivv = document.createElement("div");
     newDivv.innerHTML = `
-      <img src="image/manu/${item.img}" />
+      <img src="../image/manu/${item.img}" />
       <p>${item.name}</p>
       <span>${item.price * item.quantity} SAR</span>
       <div>

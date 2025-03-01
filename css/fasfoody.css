@@ -461,7 +461,7 @@ header .container li a:hover::before {
   resize: none;
   height: 150px;
 }
-.Contact .container a {
+.Contact .container .Send {
   color: black;
   background-color: var(--main-color);
   padding: 10px 20px;
@@ -472,8 +472,10 @@ header .container li a:hover::before {
   font-weight: 700;
   transition: var(--transition);
   border-radius: 5px;
+  cursor: pointer;
+  border: none;
 }
-.Contact .container a:hover {
+.Contact .container .Send:hover {
   color: white;
 }
 .popup {

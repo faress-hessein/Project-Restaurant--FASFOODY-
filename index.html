@@ -245,7 +245,7 @@
             </div>
           </div>
         </div>
-        <a href="manu.html">Wiew All Menu</a>
+        <a href="pages/manu.html">Wiew All Menu</a>
       </div>
     </div>
     <!-- end-Menu -->
@@ -254,7 +254,18 @@
       <h2 class="special-heading">Contact</h2>
       <div class="container">
         <h3>Request Your suggestion</h3>
-        <form action="#">
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="autoShow"
+        >
+          <!-- Replace with your Access Key -->
+          <input
+            type="hidden"
+            name="access_key"
+            value="16680311-061d-4dbf-b850-a051b1072d2f"
+          />
+          <input type="hidden" name="WEB SITE" value="FASFOODY" />
           <input
             class="Your-Name"
             id="Your-Name"
@@ -279,14 +290,14 @@
             name="message"
             placeholder="Tell Us About Your Need"
           ></textarea>
-          <a id="btnEmail" href="#Contact" type="Send" class="Send">Send</a>
+          <button type="submit" class="Send">Send</button>
         </form>
-        <div class="popup">
+        <!-- <div class="popup">
           <i class="fa-solid fa-check check"></i>
           <h4>Thank You!</h4>
           <p>Your message has been succcessfully</p>
           <button id="btnPopup">OK</button>
-        </div>
+        </div> -->
       </div>
     </div>
     <!-- end-Contact -->
